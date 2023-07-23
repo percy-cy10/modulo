@@ -1,2 +1,2 @@
-# Modulo_Notificaiones
-Proyecto Final
+# Módulo de Notificaciones
+Proyecto Final de curso
