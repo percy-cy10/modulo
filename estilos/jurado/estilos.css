@@ -1,0 +1,252 @@
+.card-header {
+    background-color: #021068 !important;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 9.5vh;
+}
+
+
+.card-body{
+    background-color: #e0e0e0 !important;
+    flex: 60% !important;
+}
+
+.card-footer {
+    background-color: #01093f !important;
+    color: #fff;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    background-color: #e0e0e0; /* Color de fondo personalizado */
+    padding: 0 0.5% 0 0.5%;
+    min-height: 78vh;
+}
+
+.col-sm-4 {
+     background-color: rgb(255, 255, 255);
+    
+}
+
+.row_1{
+    background-color: rgb(255, 255, 255);
+    margin: 7% 6% 0 20%;
+}
+
+.col-sm-8 {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.icon {
+    color: white !important;
+    margin:0 10px 0 10px; 
+}
+
+.icon-x {
+    color: white;
+    background-color: red;
+    padding: 2px;
+  }
+
+.contenido{
+    background-color:rgb(245, 232, 179) ;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 2%;
+    font-size: 11.5px;
+}
+
+/*Barra de navegacion*/
+.col-sm-12 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #021068;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.bor{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom: 2px solid black;
+}
+
+.col-sm-12 li a {
+    display: block;
+    color: #000;
+    padding: 2px 4px;
+    background-color: #e7e7e7;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.bor3{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    border-radius: 10px;
+    background-color: #021068;
+    color: white !important;
+}
+
+th, td{
+    border: 1px solid black;
+}
+
+.bor1{
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.bor2{
+    border-bottom: 2px solid black;
+}
+
+.col-sm-12 li a.active {
+    background-color: #021068;
+    color: white;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+  /*notificaciones campana*/
+
+
+.notification {
+    color: white !important;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  
+.notification .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-radius: 50%;
+    background: rgb(253, 0, 0);
+    color: white;
+}
+
+  /*notificaciones*/
+  
+
+.notificaciones {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.usuario {
+    background-color: #ffffff;
+    width: 20%;
+}
+
+.asunto {
+    background-color: #ffffff;
+    width: 80%;
+}
+
+/*observaciones*/
+
+#proyecto .modal-dialog-p{
+    width: 70% !important;
+    height: 90% !important;
+    margin: 2.5% 0 0 15% !important;
+    background-color: rgb(205, 37, 37) !important;
+    
+}
+
+#proyecto .row {
+    padding: 1% 1% 1% 1%;
+    border-radius: 1%;
+    min-height: 90vh;
+}
+
+.col-md-8{
+    background-color: #ffffff;
+}
+
+.col-md-4{
+    background-color: rgb(255, 255, 255);
+}
+
+.personalizados{
+    background-color: #0bac08 !important; 
+    color: white !important; 
+    border-radius: 10px !important; 
+    width: 100% !important; 
+    margin-top:1% !important;
+    height: 30px; /* Ajusta el valor para reducir la altura del botón */
+    padding: 5px !important;
+}
+
+.personalizado{
+    color: white !important; 
+    border-radius: 10px !important; 
+    width: 100% !important; 
+    margin-top:1% !important;
+    height: 30px; /* Ajusta el valor para reducir la altura del botón */
+    padding: 5px !important;
+}
+
+.personalizado_1{
+    color: white !important; 
+    border-radius: 10px !important; 
+    width: 100% !important; 
+    margin-top:1% !important;
+    height: 30px; /* Ajusta el valor para reducir la altura del botón */
+    padding: 5px !important;
+}
+
+.personalizado_2{
+    color: white !important; 
+    border-radius: 10px !important; 
+    width: 100% !important; 
+    margin-top:1% !important;
+    height: 30px; /* Ajusta el valor para reducir la altura del botón */
+    padding: 5px !important;
+}
+
+.personalizado_3{
+    color: rgb(0, 0, 0) !important; 
+    border-radius: 10px !important; 
+    width: 100% !important; 
+    margin-top:1% !important;
+    height: 30px; /* Ajusta el valor para reducir la altura del botón */
+    padding: 5px !important;
+}
+
+/*Dictamen*/
+#dictamen .modal-dialog-p{
+    width: 40% !important;
+    height: 30% !important;
+    margin: 10% 0 0 30% !important;
+    
+    
+}
+
+.row_2{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.form-label {
+    margin-top: 3%;
+  }
+  
+.form-label:hover {
+    background-color: #bffaf5;
+    border-radius: 10px;
+    width: 70%;
+}
+  

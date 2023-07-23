@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar estilos */
+  .navbar {
+    background-color: #05236d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-icon1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+  }
+  
+  .navbar-text {
+    margin-left: 10px;
+  }
+
+  .navbar-text2 {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+  
+  /* Contenido estilos */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Footer estilos */
+  .footer {
+    background-color: #05236d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .left-column {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+    .icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin to create space between the icon and text */
+    }
+
+    /* Add a class for the icon */
+    .icon {
+    width: 30px;
+    height: 30px;
+    left: 100px; 
+    }
+
+    /* Add a class for the text container */
+    .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+  .section {
+    flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en una sola columna */
+    padding: 10px;
+    background-color:rgba(185, 185, 185, 0.526);
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border-radius: 5px;
+  }
+  .section-cumplido {
+    flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en una sola columna */
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.886);
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border-radius: 5px;
+  }
+  
+
+  .section1 {
+    flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en una sola columna */
+    padding: 20px;
+    background-color: rgba(228, 244, 134, 0.4);
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .cuadro2{
+    flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en una sola columna */
+    padding: 10px;
+    background-color: rgba(153, 242, 121, 0.45);
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  .section-btn-subir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  /* Add a class for the brief text */
+  .section-text {
+    margin: 0;
+    font-weight: 900;
+    color:#be2315 ;
+  }
+  
+  .etiq-a {
+    padding: 10px 20px;
+    background-color: #05236d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .etiq-a-s{
+    text-decoration: none;
+    color: #000000;
+  }
+  .titulo1 {
+    margin: 0;
+    font-weight: 900;
+  }
+  .conenid-titulo {
+    margin: 0;
+  }
+  
+
+  .section-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .icon-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-list{
+    margin-left: -35px;
+    width: 50px;
+    height: 50px;
+  } 
+
+
+
+
+
+  .right-column {
+    flex: 0.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  .section-R1 {
+    flex-basis: 100%; 
+    padding: 10px;
+    margin: 0; 
+    background-color:#05236d;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border: 1px solid black; 
+    box-shadow: 1px 1px 3px black;
+  }
+
+  .icon-right {
+    display: flex;
+    align-items: center;
+    align-items: center;
+
+  }
+
+  .icon-list-right{
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+  } 
+
+  .section-mid0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+
+  .section-mid1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .contenido2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    
+}
+.titulo1-1 {
+    margin: 0;
+    font-weight: 900;
+    margin: 0;
+  }
+
+
+  .icon-text {
+    margin-left: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+
+
+
+  .section-text-inp {
+    margin: 0;
+    font-weight: 600;
+    color:#000000 ;
+  }
+  .label-inp {
+    padding: 5px 50px;
+    margin: 20px;
+    background-color: #e3e5eae2;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+
+  .upload-button {
+    padding: 10px 20px;
+    background-color: #05236d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .down-button {
+    padding: 10px 20px;
+    background-color: #28b608;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .section1 {
+    flex-basis: 100%; /* Cada sección ocupa el 100% del ancho en una sola columna */
+    padding: 0px;
+    background-color: rgba(228, 244, 134, 0.4);
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  /* Estilos para el contenido de las notificaciones en el modal */
+.notificaciones {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Estilos para el contenido del usuario */
+.usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+/* Estilos para el ícono del usuario */
+.usuario i {
+  font-size: 3em;
+}
+
+/* Estilos para el asunto de la notificación */
+.asunto {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Estilos para el enlace de "Ver más" */
+.asunto a {
+  color: rgb(76, 76, 76);
+}
+
+/* Estilos para el botón "Cerrar" del modal */
+.modal-header a {
+  color: rgb(4, 4, 113);
+  cursor: pointer;
+}
+
+/* Estilos para el botón "Cerrar" del modal al pasar el mouse */
+.modal-header a:hover {
+  color: #007bff;
+}
+/* Estilos para el contenido del modal */
+.modal-content {
+  border-radius: 5px;
+}
+
+/* Estilos para el botón de cerrar del modal */
+.modal-header .close {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el título del modal */
+.modal-title {
+  color: rgb(4, 4, 113);
+}
+
+/* Estilos para el contenido del cuerpo del modal */
+.modal-body {
+  text-align: left;
+}
+
+  @media screen and (max-width: 767px) {
+    .left-column {
+      flex-basis: 100%;
+    }
+  
+    .section {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .right-column {
+      flex-basis: 100%;
+    }
+  
+    .section {
+      flex-basis: 100%;
+    }
+  }
+  
+ 
+  
+
+  

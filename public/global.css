@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-ledger: Ledger;
+  --font-league-gothic: "League Gothic";
+
+  /* font sizes */
+  --font-size-mini: 15px;
+  --font-size-3xs: 10px;
+  --font-size-5xs: 8px;
+  --font-size-xs: 12px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gainsboro-100: rgba(217, 217, 217, 0.59);
+  --color-gainsboro-200: rgba(217, 217, 217, 0.5);
+  --color-gray: rgba(0, 0, 0, 0.8);
+  --color-midnightblue: #05236d;
+
+  /* border radiuses */
+  --br-12xs: 1px;
+  --br-10xs: 3px;
+  --br-3xs: 10px;
+}

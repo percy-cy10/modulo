@@ -1,6 +1,6 @@
 <?php
 
-    $mysqli = new mysqli("localhost", "root", "", "notificaciones");
+    $mysqli = new mysqli("localhost", "root", "", "pilar");
 
 
     if ($mysqli->connect_errno) {

@@ -1,0 +1,185 @@
+/* config input */
+input:focus {
+    outline: none;
+}
+/* config body */
+body {
+    background-color: #05236D;
+}
+/* config container */
+.container{
+    background-color: white;
+    width: auto;
+    height: auto;;
+    position: absolute; /* Para posicionar el contenedor en relación al viewport */
+    top: 50%; /* Colocar el 50% del contenedor respecto al eje Y (vertical) */
+    left: 50%; /* Colocar el 50% del contenedor respecto al eje X (horizontal) */
+    transform: translate(-50%, -50%); /* Centrar el contenedor exactamente en el medio */
+    border-radius: 3rem;
+    padding: 1rem;
+}
+.container_interno{
+    width: auto;
+    height: auto;
+    /* background-color: yellow; */
+    padding: 1rem 1rem .3rem 1rem;
+
+}
+/* config cabcera login */
+.login_cabecera{
+    color: #05236D;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: bold;
+    text-align: center;
+    
+
+}
+.cabecera{
+    /* background-color: red; */
+    padding: 1rem;
+}
+/* config logo y img logo */
+.img_UVP{
+    width: 220px;
+     /* Ajusta el ancho deseado */
+    height: auto;
+}
+.logo{
+    /* background-color: green; */
+    padding: 1rem 3.5rem;
+    text-align: center;
+    
+}
+/* config container de user y password */
+.container_C_P{
+    /* background-color: aqua; */
+    padding: .5rem 1rem 0rem 1rem ;
+}
+/* config user */
+.user{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding: .5rem;
+    border: none;
+}
+.user_input{
+    border: none; 
+    background-color: transparent; 
+    width: 15rem;
+
+}
+/* config password */
+.password{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding: .5rem;
+    border: none;
+}
+.password_input{
+    border: none;
+    background-color:transparent; 
+    width: 15rem;
+/* config captcha */
+}
+.error_captcha{
+
+    text-align: center;
+      /* Estilos para el mensaje de error */
+    position: fixed;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    color: red;
+}
+
+.captcha_boton h1{
+
+    text-align: center;
+}
+.g-recaptcha {
+    /* Ajusta el ancho deseado */
+    /* width: 30px; */
+    
+}
+/* config error */
+.error{
+    text-align: center;
+      /* Estilos para el mensaje de error */
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    color: red;
+}
+.error1{
+    text-align: center;
+      /* Estilos para el mensaje de error */
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    color: red;
+}
+.error-fatal{
+    text-align: center;
+      /* Estilos para el mensaje de error */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999999;
+    color: red;
+    padding: 1rem;
+}
+/* boton ingresar */
+.ingresar{
+    /* background-color: red; */
+    /* padding: 1rem; */
+    text-align: center;
+}
+.ingresar_input{
+    background-color: #05236D;
+    width:200px;
+    height: auto;
+    padding: 0.5rem .5rem 0rem .5rem;
+    border-radius: 1rem;
+
+}
+.ingresar_h5{
+    font-family: 'Inknut Antiqua', serif;
+    position: relative; 
+    /* font-weight: bold; */
+    text-align: center;
+    color: white;
+}
+/* icon config */
+.fas{
+    color: #05236D;
+    padding: .5rem;
+    
+}
+.error-message {
+    color: red;
+    text-align: center;
+    /* margin-top: 10px; */
+    display: none;
+}
+.span{
+    /* background-color: #05236D; */
+    height: 1rem;
+}
+.span #error{
+    font-size: 12px;
+    display:none;
+    color:red;
+
+}
+.span #success{
+    font-size: 12px;
+    display:none;
+    color:green;
+
+}
