@@ -39,9 +39,9 @@ if ($resultData->num_rows > 0) {
     }
 }
 // Mensaje de texto para enviar
-$asunto =  '*Asunto: Corrección del Proyecto de Tesis*';
+$asunto =  'Asunto: Corrección del Proyecto de Tesis';
 $mensajeTexto = '
-Estimado Jurado,
+*Estimado Jurado*,
 Le informo que se ha realizado las *correcciones en el proyecto de tesis* y ya está disponible para su revisión en la plataforma Pilar. 
 Agradezco su tiempo y quedo atento/a a cualquier consulta.
 Gracias y saludos cordiales';
