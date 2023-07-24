@@ -271,7 +271,7 @@
                                                         echo $parteMostrada . "...";
                                                     
                                                     ?>
-                                                    <a style="color: rgb(76, 76, 76);"  href="#detalle">Ver más</a>
+                                                    <a style="color: rgb(76, 76, 76);" href="#detalle" data-toggle="modal" data-target="#detalleModal">Ver más</a>
                                                 </p>
                                             </div>
 
@@ -293,8 +293,84 @@
                 </div>
             </div>
         </div>
+    <!-- Modal detalle de notificaciones -->
 
+
+    <div class="modal fade" id="detalleModal" tabindex="-1" role="dialog" aria-labelledby="detalleModalLabel" aria-hidden="true" style="width: 60%;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detalleModalLabel">Detalle de la Notificación</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+        <!-- Agregamos el estilo max-height y overflow-y para ajustar el scroll -->
+         <?php
+                            
+         $mysqli = new mysqli("localhost", "root", "", "pilar");
+
+
+         if ($mysqli->connect_errno) {
+             echo "Error al conectar a la base de datos: " . $mysqli->connect_error;
+             exit();
+         }
+
+         
+         $query = "SELECT * FROM notificacionjurado WHERE Jurado_Id = 1";
+
+         $resultado = mysqli_query($mysqli, $query);
+
+         $cantidad = mysqli_num_rows($resultado);
+
+         $leido = 0; //indicador del notificacion leida o no leida
+
+         if ($cantidad == 0){
+     ?>
+             <h6>Lista de Notificación vacía</h6>
+     
+     <?php
+         }else{
+
+             while ($fila = mysqli_fetch_assoc($resultado)) {
+     ?>
+                 <div class="notificaciones" style="margin: 0 0 1.5% 0;background-color: <?php echo ($leido === 0) ? '#d0e0ef' : 'white'; ?>;">
+                
+                     <div class="usuario" style="background-color: <?php echo ($leido === 0) ? '#d0e0ef' : 'white'; ?>;">
+                         <i class="fa fa-user fa-3x"></i>
+                         <p style="display: flex;align-items: center;justify-content: center;"><b>PILAR</b></p>
+                     </div>
+
+                     <div class="asunto" style="background-color: <?php echo ($leido === 0) ? '#d0e0ef' : 'white'; ?>;">
+                         <div class="descripcion" style="text-align: left; font-size: 12px; margin-bottom: 0;">
+                             <h6><?php echo $fila['Descripcion']; ?></h6>
+                             <p>
+                                 <?php 
+                                     echo $fila['contenido'];
+                                 
+                                 ?>
+
+                             </p>
+                         </div>
+
+                         <div class="fecha" style="text-align: right; font-size: 10px; margin-top: -5%;">
+                             <b><span>
+                                 <?php echo $fila['hora']; ?></h6> <br>
+                                 <?php echo $fila['Fecha']; ?></h6>
+                             </span></b>
+                         </div>
+                     </div>
+                 </div>
+     
+     <?php
+             }
+         }
+     ?>
+      </div>
     </div>
+  </div>
+</div>
 </body>
 
     <script>

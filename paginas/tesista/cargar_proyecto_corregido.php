@@ -55,6 +55,6 @@ if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) 
 
 
 header("Location: pagina5.1.php");
-//include "../Recordatorio/Recordatoriojurado.php";
+include "../Recordatorio/Recordatoriojurado.php";
 
 ?>
