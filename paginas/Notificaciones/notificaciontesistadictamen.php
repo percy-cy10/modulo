@@ -38,8 +38,8 @@ if ($resultData && $resultData->num_rows > 0) {
 // Mensaje de texto para enviar
 $asunto = 'Asunto: Dictamen del Proyecto de Tesis';
 $mensajeTexto = '
-Estimado Tesista,
-Espero que esté teniendo un buen día. Quería informarle que ya puede ver el dictamen del proyecto de tesis. 
+*Estimado Tesista*,
+Espero que esté teniendo un buen día. Quería informarle que ya puede ver el *Dictamen del proyecto de tesis*. 
 Ingrese a la plataforma Pilar para ver a detalle.
 Agradezco mucho su tiempo.';
 
