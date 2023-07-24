@@ -40,8 +40,8 @@ if ($resultData && $resultData->num_rows > 0) {
 // Mensaje de texto para enviar
 $asunto = 'Asunto: Revision del Proyecto de Tesis';
 $mensajeTexto = '
-Estimado Tesista,
-Le informo que se ha realizado la revision del proyecto de tesis y ya está disponible para realizar las correcciones en la plataforma Pilar. 
+*Estimado Tesista*,
+Le informo que se ha realizado la revision del proyecto de tesis y ya está *disponible para realizar las correcciones en la plataforma Pilar*. 
 Agradezco su tiempo.
 Gracias y saludos cordiales';
 
