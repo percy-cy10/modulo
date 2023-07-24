@@ -50,7 +50,7 @@ if ($filas_tesista !== null) {
     // Restablecer el contador de intentos fallidos a 0 si el inicio de sesión como jurado es exitoso
     $_SESSION['contador_fallidos'] = 0;
     $_SESSION['id_usuario'] = $filas_jurado['id']; // Almacenar el ID del usuario en la variable de sesión
-    header("Location: jurado.php");
+    header("Location: paginas/jurado/inicio.php");
 } else {
     // Incrementar el contador de intentos fallidos
     $_SESSION['contador_fallidos']++;
