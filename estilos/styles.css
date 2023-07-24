@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
   }
   
+  .icon {
+    color: white !important;
+    margin:0 10px 0 10px; 
+}
+  
   /* Navbar estilos */
   .navbar {
     background-color: #05236d;

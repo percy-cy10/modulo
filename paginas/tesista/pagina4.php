@@ -1,15 +1,9 @@
 
 <?php
     session_start();
-    $mysqli = new mysqli("localhost", "root", "", "pilar");
+    include "../../conexiones/database.php";
 
-
-    if ($mysqli->connect_errno) {
-        echo "Error al conectar a la base de datos: " . $mysqli->connect_error;
-        exit();
-    }
-
-    $id = 1;
+    $id = $_SESSION['id_usuario'];
 
     $query = "SELECT * FROM tesista WHERE id = ".$id;
     $resultado = mysqli_query($mysqli, $query);
@@ -141,12 +135,12 @@
       <span class="navbar-text">TESISTA PILAR</span>
     </div>
     <div class="navbar-right">
-      <span class="navbar-text2">Reynaldo Muñoz Rodríguez</span>
+     <span class="navbar-text2"><?php echo "$Nombres $appP $appM"; ?></span>
       <img src="../../public/icon-notificaion188-1@2x.png" alt="Icono 1" class="navbar-icon">
       <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
         <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
       </a>
-      <a href="../../../index.html"><img src="../../public/icon-salir191-1@2x.png" alt="Icono 3" class="navbar-icon">
+      <a href="../../cerrar_sesion.php"><i class="fa fa-sign-out fa-2x icon"></i></a>
       </a>
     </div>
   </nav>

@@ -1,6 +1,29 @@
 <?php
+    session_start();
+    include "../../conexiones/database.php";
+
+    $id = $_SESSION['id_usuario'];
+
+    $query = "SELECT * FROM tesista WHERE id = ".$id;
+    $resultado = mysqli_query($mysqli, $query);
+
+    if ($resultado) {
+        if (mysqli_num_rows($resultado) > 0) {
+            $fila = mysqli_fetch_assoc($resultado);
+            $Nombres = $fila['Nombres'];
+            $appP = $fila['ApellidoPaterno'];
+            $appM = $fila['Apellidomaterno'];
+        }
+    }
+
+    $not = "SELECT * FROM notificaciontesista WHERE Tesista_Id = ".$id." AND leido = 0";
+    $resultadon = mysqli_query($mysqli, $not);
+
+    $cant = mysqli_num_rows($resultadon); 
     
+
 ?>
+
 <html>
     <head>
         <title>PILAR-Modulo</title>
@@ -20,12 +43,12 @@
       <span class="navbar-text">TESISTA PILAR</span>
     </div>
     <div class="navbar-right">
-      <span class="navbar-text2">Reynaldo Muñoz Rodríguez</span>
+      <span class="navbar-text2"><?php echo "$Nombres $appP $appM"; ?></span>
       <img src="../../public/icon-notificaion188-1@2x.png" alt="Icono 1" class="navbar-icon">
       <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
       <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
       </a>
-      <img src="../../public/icon-salir191-1@2x.png" alt="Icono 3" class="navbar-icon">
+      <a href="../../cerrar_sesion.php"><i class="fa fa-sign-out fa-2x icon"></i></a>
     </div>
   </nav>
 

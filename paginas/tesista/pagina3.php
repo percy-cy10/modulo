@@ -1,6 +1,29 @@
 <?php
+    session_start();
+    include "../../conexiones/database.php";
+
+    $id = $_SESSION['id_usuario'];
+
+    $query = "SELECT * FROM tesista WHERE id = ".$id;
+    $resultado = mysqli_query($mysqli, $query);
+
+    if ($resultado) {
+        if (mysqli_num_rows($resultado) > 0) {
+            $fila = mysqli_fetch_assoc($resultado);
+            $Nombres = $fila['Nombres'];
+            $appP = $fila['ApellidoPaterno'];
+            $appM = $fila['Apellidomaterno'];
+        }
+    }
+
+    $not = "SELECT * FROM notificaciontesista WHERE Tesista_Id = ".$id." AND leido = 0";
+    $resultadon = mysqli_query($mysqli, $not);
+
+    $cant = mysqli_num_rows($resultadon); 
     
+
 ?>
+
 <html>
     <head>
         <title>PILAR-Modulo</title>
@@ -17,10 +40,12 @@
       <span class="navbar-text">TESISTA PILAR</span>
     </div>
     <div class="navbar-right">
-      <span class="navbar-text2">Reynaldo Muñoz Rodríguez</span>
+      <span class="navbar-text2"><?php echo "$Nombres $appP $appM"; ?></span>
       <img src="../../public/icon-notificaion188-1@2x.png" alt="Icono 1" class="navbar-icon">
-      <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
-      <img src="../../public/icon-salir191-1@2x.png" alt="Icono 3" class="navbar-icon">
+      <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
+        <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
+      </a>
+      <a href="../../cerrar_sesion.php"><i class="fa fa-sign-out fa-2x icon"></i></a>
     </div>
   </nav>
 
@@ -253,7 +278,29 @@
         </div>
     </div>
   </div>
+        <!-- Modal notificaciones-->
+        <div class="modal fade " id="notificaciones" style="width: 55%; margin: 2.5% 0 0 53%" >
+            <div class="modal-dialog">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <h4 style="color: rgb(4, 4, 113); margin-left: 20%;"><b>Lista de Notificaciones</b></h4>
+                        <a href="" data-dismiss="modal"><i class="fa fa-times icon-x fa-2x"></i></a>
+            
+                    </div>
+
+                    <div class="modal-body" style="overflow-y: auto;max-height: 73.5vh;">
+
+      <div class="modal-body">
+        <!-- Aquí puedes agregar el contenido del detalle de la notificación -->
+        <!-- Por ejemplo, información adicional de la notificación -->
+        <p>Lista de notificaciones vacía</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
   <footer class="footer">
     <p>Universidad Nacional del Altiplano Vicerrectorado de Investigación Dirección General de Investigación © Plataforma de Investigación y Desarrollo &copy; </p>
