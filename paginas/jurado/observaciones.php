@@ -36,27 +36,71 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+            @media (max-width: 600px) {
+                .bajo{
+                    margin-top:-2%;
+                }
+                .unap {
+                    display: none;
+                }
+                .datos_1{
+                    margin-left: -12.5%;
+                }
+                .datos{
+                    margin-top: -2%;
+                    margin-left: -10px;
+                }
 
-   
-    <title>Pagina de Incio</title>
+                #notificaciones{
+                    margin: 11% 0 0 46%;
+                }
+                .cabecera{
+                    margin-left: -12%;
+                }
+                .desti{
+                    font-size: 12px;
+                }
+            }
+
+            /* Pantalla grande */
+            @media (min-width: 601px) {
+                .datos {
+                    margin-top: 3%; /* Valor cuando la pantalla es grande */
+                    margin-left: 10px;
+                }
+
+                .unap{
+                    margin-top:-14%;
+                }
+
+                .imagen{
+                    margin:-6% 0 0 -130%; 
+                }
+                #notificaciones{
+                    margin: 2.5% 0 0 53%;
+                }
+
+            }
+    </style>
+    
+    <title>Pagina de observaciones</title>
 </head>
 <body>
     <div class="card text-center">
         <div class="card-header">
             <div class="left-column">
-                
-                <div style="display: flex;">
-                    <img src="../../imagenes/jurado/logo_pilar.png" width="40px">
-                    <p style="margin: 8px 0 0 10px;"><b>DOCENTE PILAR</b></p>
-                </div>
+                <img src="../../imagenes/jurado/logo_pilar.png" width="40px" class="datos_1">
+                <spam class="datos_d"><b>DOCENTE PILAR</b></spam>
+               
                   
             </div>
             <div class="right-column">
                 <div style="display: flex;">
-                    <p style="margin: 3% 0 0 10px;font-size: 100%;"><b><?php echo "$Nombres $appP $appM"; ?></b></p> 
+                    <p class="datos" style=""><b><?php echo "$Nombres $appP $appM"; ?></b></p>
                     <i class="fa fa-user fa-2x icon"></i>
 
-                    <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
+                    <a href="#" data-toggle="modal"  data-target="#notificaciones" class="notification">
                         <i class="fa fa-bell fa-2x "></i>
                         <?php
 
@@ -77,6 +121,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="card-body">
 
             <div class="row">
@@ -201,20 +248,20 @@
         </div>
 
         <div class="card-footer" style="font-size: 10px;">
-            <div>Consultas Correo: dginvestigacion@unap.edu.pe</div>
-            <div>Vicerrectorado de Investigación Dirección General de Investigación @ Plataforma de Investigación y Desarrollo</div>
-            <div>
-                <img  style="margin-top: -6%;" src="../../imagenes/jurado/Logo_unap.png" width="30px">
-                <span>Universidad Nacional del Altiplano</span>
+            <div class ="bajo">Consultas Correo: dginvestigacion@unap.edu.pe</div>
+            <div class ="bajo">Vicerrectorado de Investigación Dirección General de Investigación @ Plataforma de Investigación</div>
+            <div class ="bajo">
+                <img class ="imagen" src="../../imagenes/jurado/Logo_unap.png" width="30px">
+                <p class="unap" >Universidad Nacional del Altiplano</p>
             </div>
         </div>
 
         <!-- Modal notificaciones-->
-        <div class="modal fade " id="notificaciones" style="width: 55%; margin: 2.5% 0 0 53%" >
+        <div class="modal fade " id="notificaciones" style="width: 55%;" >
             <div class="modal-dialog">
                 <div class="modal-content">
 
-                    <div class="modal-header">
+                    <div class="modal-header cabecera">
                         <h4 style="color: rgb(4, 4, 113); margin-left: 20%;"><b>Lista de Notificaciones</b></h4>
                         <a href="" data-dismiss="modal"><i class="fa fa-times icon-x fa-2x"></i></a>
             
@@ -245,7 +292,7 @@
                                    
                                         <div class="usuario" style="background-color: <?php echo ($fila['leido'] == 0) ? '#d0e0ef' : 'white'; ?>;">
                                             <i class="fa fa-user fa-3x"></i>
-                                            <p style="display: flex;align-items: center;justify-content: center;"><b>PILAR</b></p>
+                                            <p style="display: flex;align-items: center;justify-content: center;" class="desti"><b>PILAR</b></p>
                                         </div>
 
                                         <div class="asunto" style="background-color: <?php echo ($fila['leido'] == 0) ? '#d0e0ef' : 'white'; ?>;">
