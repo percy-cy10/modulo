@@ -17,7 +17,7 @@
         }
     }
 
-    $not = "SELECT * FROM notificacionjurado WHERE Jurado_Id = ".$id." AND leido = 0";
+    $not = "SELECT * FROM notificacionjurado WHERE Jurado_Id = ".$id." AND leido = 0 AND Tipo = 'SMS'";
     $resultadon = mysqli_query($mysqli, $not);
 
     $cant = mysqli_num_rows($resultadon); 
@@ -235,7 +235,10 @@
                         <?php
 
                             
-                            $query = "SELECT * FROM notificacionjurado WHERE Jurado_Id = ".$id;
+
+                            $query = "SELECT * FROM notificacionjurado WHERE Jurado_Id = ".$id." AND Tipo = 'SMS'";
+
+                            
 
                             $resultado = mysqli_query($mysqli, $query);
 
