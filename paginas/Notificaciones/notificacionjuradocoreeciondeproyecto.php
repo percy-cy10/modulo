@@ -4,7 +4,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
-$ids = $_SESSION['id_usuario'];
 // Configuración de la base de datos
 include '../../conexiones/database.php';
 $ids = $_SESSION['id_usuario'];

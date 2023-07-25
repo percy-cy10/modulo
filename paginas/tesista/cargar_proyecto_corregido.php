@@ -1,5 +1,4 @@
 <?php
-include "../Notificaciones/notificacionjuradocoreeciondeproyecto.php";
 // Verifica si se ha cargado el archivo correctamente
 if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) {
     // Obtén el nombre original del archivo cargado
@@ -52,7 +51,7 @@ if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) 
     
 }
 
-
+include "../Notificaciones/notificacionjuradocoreeciondeproyecto.php";
 
 header("Location: pagina5.1.php");
 include "../Recordatorio/Recordatoriojurado.php";
