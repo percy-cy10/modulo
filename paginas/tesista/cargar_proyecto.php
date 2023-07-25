@@ -93,6 +93,7 @@ if (mysqli_query($conexion, $query)) {
 
 // Cierra la conexión a la base de datos
 mysqli_close($conexion);
+include "../Notificaciones/notificacionjuradosubidadeproyecto.php";
 
 header("Location: pagina2.php");
 include "../Recordatorio/Recordatoriojurado.php";
