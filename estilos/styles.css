@@ -11,7 +11,7 @@ body {
   
   /* Navbar estilos */
   .navbar {
-    background-color: #05236d;
+    background-color: #021068 ;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -261,9 +261,6 @@ body {
     max-height: 100px;
   }
 
-
-
-
   .section-text-inp {
     margin: 0;
     font-weight: 600;
@@ -371,6 +368,8 @@ body {
 .modal-body {
   text-align: left;
 }
+
+
 
   @media screen and (max-width: 767px) {
     .left-column {

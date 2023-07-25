@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../../estilos/styles.css">
         <link rel="stylesheet" href="../../estilos/estilos_notific.css">
+        <link rel="stylesheet" href="../../estilos/estilos2.css">
     </head>
 
     <body>
@@ -44,10 +45,19 @@
     </div>
     <div class="navbar-right">
       <span class="navbar-text2"><?php echo "$Nombres $appP $appM"; ?></span>
-      <img src="../../public/icon-notificaion188-1@2x.png" alt="Icono 1" class="navbar-icon">
-      <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
-      <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
-      </a>
+      <i class="fa fa-user fa-2x icon" class="navbar-icon"></i> 
+                    <a href="#" data-toggle="modal"  data-target="#notificaciones" class="notification">
+                        <i class="fa fa-bell fa-2x " class="navbar-icon"></i>
+                        <?php
+
+                            if ($cant != 0){
+                        ?>
+                                <span class="badge"><?php echo $cant; ?></span> 
+                        <?php
+                            }
+                        ?>
+                        
+                    </a>
       <a href="../../cerrar_sesion.php"><i class="fa fa-sign-out fa-2x icon"></i></a>
     </div>
   </nav>
@@ -205,84 +215,42 @@
         </div>
     </div>
 
-
-    <div class="right-column">
-        <div class="section-R1">
-            <div class="section-mid0">
-            <div class="icon-left">    
-            <img src="../../public/image-inicio@2x.png" alt="Icon" class="icon-list-right">
-            <div class="contenido">
-                <p class="titulo1">Inicio</p>
-            </div>
-            </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-perfil@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Perfil</p>
-            </div>
-            </div> 
-        </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-lineainvestigacion@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Linea de Investigación</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-herramientatesis@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Herramientas del Tesista</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-contacto@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Contacto</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-proyectotesis@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Proyceto del Tesista</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-borrador@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Borrador de Tesis</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section">
-            <div class="section-mid1">
-            <div class="icon-left">
-                <img src="../../public/image-borrador@2x.png" alt="Icono" class="navbar-icon1">
-                <p class="titulo1">Sustentación no Presencial</p>
-            </div>
-            </div> 
-          </div>
-          <div class="section-R1">
-            <div class="section-mid0">
-            <div class="icon-left">    
-            <img src="../../public/descargar@2x.png" alt="Icon" class="icon-list-right">
-            <div class="contenido">
-                <p class="titulo1">Descargar formato de proyecto de tesis</p>
-            </div>
-            </div>
-            </div>
-        </div>
+            
+    <div class="col-sm-4" >
+                    <div class="row_1">
+                        <div class="col-sm-12">
+                            <ul>
+                                <li><a class="active bor" href="#"><i class="fa fa-home fa-2x"></i>&ensp;Inicio</a></li>
+                                <li><a class="bor1" href="#news"><i class="fa fa-user fa-2x"></i>&ensp;Perfil</a></li>
+                            </ul>
+                              
+                        </div><br>
+                        <div class="col-sm-12">
+                            <ul>
+                                <li><a class="bor" href="#home"><i class="fa fa-book fa-2x"></i>&ensp;Lineas de Investigación</a></li>
+                                <li><a class="bor2" href="#news"><i class="fa fa-cogs fa-2x"></i>&ensp;Herramientas de Docente</a></li>
+                                <li><a class="bor1" href="#news"><i class="fa fa-phone fa-2x"></i>&ensp;Contacto</a></li>
+                            </ul>
+                        </div><br>
+                        <div class="col-sm-12">
+                            <ul>
+                                <li><a class="bor" href="#"><i class="fa fa-file fa-2x"></i>&ensp;Proyectos de Tesis en curso</a></li>
+                                <li><a class="bor2" href="#news"><i class="fa fa-tasks fa-2x"></i>&ensp;Borradores de Tesis en curso</a></li>
+                                <li><a class="bor1" href="#news"><i class="fa fa-wifi fa-2x"></i>&ensp;Sustentaciones No Presenciales</a></li>
+                            </ul>
+                        </div><br>
+                        <div class="col-sm-12">
+                            <p style="color: rgb(4, 4, 113);margin: 0 0 3% 0;"><b>FORMATOS</b></p>
+                            <ul>
+                               <a class="bor3" href="https://vriunap.pe/vriadds/pilar/doc/formatos/Formato%20de%20proyecto%20de%20tesis%20-%20Sistemas.docx">
+                                    <i class="fa fa-download fa-1x"></i>&ensp;<span style="font-size: 12px;">Descargar Formato: Proyecto de Tesis</span>
+                                </a>
+                            </ul>
+                            
+                            
+                        </div>
+                      </div>                      
+                              
     </div>
   </div>
 

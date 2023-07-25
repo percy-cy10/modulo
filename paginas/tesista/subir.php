@@ -32,9 +32,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../../estilos/styles.css">
+        <link rel="stylesheet" href="../../estilos/estilos2.css">
         <link rel="stylesheet" href="../../estilos/estilos_notific.css">
 
         <style>
+
+
           
 .container {
   display: flex;
@@ -66,11 +69,22 @@
 .label-inp,
 .label-inp[type="text"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.salir{
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+
+}
+
 
 /* Estilos para el botón de submit */
 input[type="submit"] {
@@ -116,10 +130,19 @@ input[type="submit"]:hover {
     </div>
     <div class="navbar-right">
       <span class="navbar-text2"><?php echo "$Nombres $appP $appM"; ?></span>
-      <img src="../../public/icon-notificaion188-1@2x.png" alt="Icono 1" class="navbar-icon">
-      <a href="#" data-toggle="modal" data-target="#notificaciones" class="notification">
-        <img src="../../public/icon-notificacion189-1@2x.png" alt="Icono 2" class="navbar-icon">
-      </a>
+      <i class="fa fa-user fa-2x icon" class="navbar-icon"></i> 
+                    <a href="#" data-toggle="modal"  data-target="#notificaciones" class="notification">
+                        <i class="fa fa-bell fa-2x " class="navbar-icon"></i>
+                        <?php
+                            $cant=1;
+                            if ($cant == 1){
+                        ?>
+                                <span class="badge"><?php echo $cant; ?></span> 
+                        <?php
+                            }
+                        ?>
+                        
+                    </a>
       <a href="../../cerrar_sesion.php"><i class="fa fa-sign-out fa-2x icon"></i></a>
     </div>
   </nav>
@@ -196,11 +219,13 @@ input[type="submit"]:hover {
         <input type="submit" value="Registrar Proyecto de Tesis" name="submit" class="submit-btn" />
         </div>
     </form>
-    
-</div>
-</div>
-              </div>
-              </div>
+          <a href="pagina_principal.php" class="salir">Salir</a>
+        </div>
+        </div>
+        </div>
+        
+
+              
           <!-- Modal notificaciones-->
           <div class="modal fade " id="notificaciones" style="width: 55%; margin: 2.5% 0 0 53%" >
             <div class="modal-dialog">
@@ -213,7 +238,7 @@ input[type="submit"]:hover {
                     </div>
 
                     <div class="modal-body" style="overflow-y: auto;max-height: 73.5vh;">
-
+br
       <div class="modal-body">
         <!-- Aquí puedes agregar el contenido del detalle de la notificación -->
         <!-- Por ejemplo, información adicional de la notificación -->
