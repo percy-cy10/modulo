@@ -95,6 +95,6 @@ if (mysqli_query($conexion, $query)) {
 mysqli_close($conexion);
 
 header("Location: pagina2.php");
-include "../Notificaciones/notificacionjuradosubidadeproyecto.php";
+include "../Recordatorio/Recordatoriojurado.php";
 }
 ?>
